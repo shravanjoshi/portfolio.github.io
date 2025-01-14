@@ -1,3 +1,13 @@
+::-webkit-scrollbar {
+    width: 9px; /* Width of the scrollbar */
+}
+
+
+
+::-webkit-scrollbar-thumb {
+    background: #444; /* Color of the scrollbar thumb */
+}
+
 html{
     scroll-behavior: smooth;
 }
