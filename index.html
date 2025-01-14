@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="icon" 
+      type="image/png" 
+      href="./portfolio.favicon.png" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="nav-brand"><span><img src="./images/programming.svg" alt=""></span>Shravan</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="home">
+        <div class="container">
+            <div class="home-content">
+                <h1>Hi, I'm <span>Shravan</span></h1>
+                <div class="desc">
+                    <span id="profession"></span><span class="cursor"></span>
+                </div>
+                <a class="btn">Download Resume</a>
+            </div>
+            <div class="image-content">
+                <img src="./images/photo.jpeg" alt="Your Photo" class="profile-photo">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="heading">About Me</div>
+            <p class="info"> Hello! I am Shravan Joshi, a passionate and dedicated Computer Science student currently pursuing my
+                B.Tech from Maulana Azad National Institute of Technology (MANIT), Bhopal. I hail from Khargone, a
+                vibrant city in Madhya Pradesh, India. My journey in the field of technology has been fueled by
+                curiosity and a drive to innovate. I am constantly exploring new tools and technologies to enhance my
+                skills and contribute meaningfully to the ever-evolving world of computer science.</p>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="heading">Skills</div>
+            <div class="skill-content">
+                <p>I am proficient in C++, HTML, CSS, and JavaScript, with a strong foundation in competitive programming. My expertise in C++ enables me to solve complex problems with optimal algorithms and efficient code. I also have hands-on experience in web development, utilizing HTML, CSS, and JavaScript to create interactive and visually appealing websites. Additionally, my passion for competitive programming has honed my problem-solving skills, allowing me to tackle challenges with precision and creativity. These skills collectively empower me to build and optimize solutions in both software development and algorithmic problem solving.</p>
+            </div>
+            <div class="skill-icons">
+                <img src="./images/c++.png" alt="">
+                <img src="./images/dsa.png" alt="">
+                <img src="./images/html.png" alt="">
+                <img src="./images/css.png" alt="">
+                <img src="./images/js.png" alt="">
+            </div>
+
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="heading">Projects</div>
+        <div class="container">
+            <!-- <div class="portfolio-grid">
+                <div class="portfolio-item">Project 1</div>
+                <div class="portfolio-item">Project 2</div>
+                <div class="portfolio-item">Project 3</div>
+                <div class="portfolio-item">Project 4</div>
+            </div> -->
+
+            <div class="carousel">
+                <div>
+                    <div class="project-card">
+                        <img src="./images/blog-project.png" alt="Project Image" class="project-image">
+                        <div class="project-content">
+                          <h3 class="project-title">Blog App</h3>
+                          <p class="project-description">A web application for creating blog posts. Built with Node.js for the server, MongoDB for the database, and EJS for the frontend, it offers user-friendly interfaces, dynamic content rendering, and efficient data storage for seamless blogging experiences.</p>
+                          <a target="_blank" href="https://github.com/shravanjoshi/blog_app" class="project-link">Github repo</a>
+                        </div>
+                      </div>
+                </div>
+                <div>
+                    <div class="project-card">
+                        <img src="./images/password-project.png" alt="Project Image" class="project-image">
+                        <div class="project-content">
+                          <h3 class="project-title">Password Generator</h3>
+                          <p class="project-description">A simple and secure password generator that creates strong, random passwords based on user-defined criteria, such as length, inclusion of special characters, numbers, and uppercase letters. Built to enhance online security by ensuring robust password creation.</p>
+                          <a target="_blank" href="https://github.com/shravanjoshi/PASSWORD-GENERATOR" class="project-link">Github repo</a>
+                        </div>
+                      </div>
+                </div>
+                <div>
+                    <div class="project-card">
+                        <img src="./images/currency-project.jpg" alt="Project Image" class="project-image">
+                        <div class="project-content">
+                          <h3 class="project-title">Currency Converter</h3>
+                          <p class="project-description">A simple and efficient web application that allows users to convert currencies in real-time. The app fetches live exchange rates from reliable APIs, enabling seamless conversions between different currencies. It provides an intuitive user interface with easy-to-use features.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                          <a target="_blank" href="https://github.com/shravanjoshi/CURRENCY-CONVERTER" class="project-link">Github repo</a>
+                        </div>
+                      </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="heading">Contact Me</div>
+        <div class="container">
+            <form action="#" class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="profiles">
+
+                <a target="_blank" href="https://github.com/shravanjoshi"><img style="width: 40px;" src="./images/github-6980894.svg" alt="SVG"></a>
+
+                <a target="_blank" href="https://www.linkedin.com/in/shravan-joshi-5074012b3/"><img style="width: 23px;" src="./images/linkedin.svg" alt="SVG"></a>
+
+                <a target="_blank" href="https://codeforces.com/profile/shravanjoshi"><img src="./images/codeforces.svg" alt="SVG"></a>
+
+                <a target="_blank" href="https://leetcode.com/u/shravanjoshi/"><img src="./images/leetcode.svg" alt="SVG"></a>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (required for Slick Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Carousel JS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
